@@ -5,9 +5,11 @@ Two design rules:
 1. **Flat and type-stable.** The Eventstream Lakehouse destination enforces a Delta
    schema; nested or type-switching fields fail the write. Every field below is always
    present with the same type (missing values become ``None`` of that type).
-2. **No personal data.** Anonymous Wikipedia edits are attributed to an IP address and
-   edit comments are free text. We keep neither: only a ``user_type`` category
-   (bot / anonymous / registered) and the comment length.
+2. **No personal data.** Logged-out Wikipedia edits are attributed to a temporary account
+   (``~2025-01234-56``) or, on wikis without temporary accounts, an IP address; edit
+   comments are free text. We keep none of these: only a ``user_type`` category
+   (bot / anonymous / registered) and the comment length. ``anonymous`` means
+   "logged out", whether the stream shows a temporary account or an IP.
 """
 from __future__ import annotations
 
@@ -33,10 +35,16 @@ def _is_ip(user: str) -> bool:
         return False
 
 
+def _is_temporary_account(user: str) -> bool:
+    # MediaWiki temporary accounts (logged-out editors) are named like "~2025-01234-56";
+    # the "~" prefix is reserved for them, so no registered user name starts with it.
+    return user.startswith("~")
+
+
 def user_type(user: str | None, bot: bool | None) -> str:
     if bot:
         return "bot"
-    if user and _is_ip(user):
+    if user and (_is_temporary_account(user) or _is_ip(user)):
         return "anonymous"
     return "registered"
 

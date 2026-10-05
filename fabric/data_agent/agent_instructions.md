@@ -25,7 +25,8 @@ Semantics:
 - "Latest state" questions use silver_page_latest; "history" or "how many edits" questions use
   silver_wiki_edits or the gold tables. Say which one you used.
 - wiki codes: enwiki = English, dewiki = German, trwiki = Turkish Wikipedia.
-- user_type is bot / anonymous / registered. There are no user names or IP addresses in the data.
+- user_type is bot / anonymous / registered; anonymous means a logged-out editor (temporary
+  account or IP). There are no user names, temporary account names or IP addresses in the data.
 - Times are UTC.
 
 Answer format: one sentence with the direct answer, then a small table. Percentages with

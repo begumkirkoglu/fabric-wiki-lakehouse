@@ -35,6 +35,7 @@ def test_record_contract_and_privacy():
 def test_user_type():
     assert user_type("203.0.113.7", False) == "anonymous"
     assert user_type("2001:db8::42", False) == "anonymous"
+    assert user_type("~2025-01234-56", False) == "anonymous"  # temporary account (logged out)
     assert user_type("SomeBot", True) == "bot"
     assert user_type("Alice", False) == "registered"
 

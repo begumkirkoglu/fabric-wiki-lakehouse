@@ -99,9 +99,10 @@ create the silver tables.
 schema and fails on nested or type-switching JSON. Flattening once at the edge keeps
 Eventstream simple and makes the contract explicit (`schema_version`).
 
-**Privacy by design.** Anonymous Wikipedia edits are attributed to IP addresses, and edit
-comments are free text. The producer keeps neither: only `user_type`
-(bot / anonymous / registered) and `comment_length`.
+**Privacy by design.** Logged-out Wikipedia edits are attributed to a temporary account
+(`~2025-01234-56`) or, on wikis without temporary accounts, an IP address; edit comments are
+free text. The producer keeps none of these: only `user_type` (bot / anonymous / registered,
+where anonymous = logged out) and `comment_length`.
 
 **At-least-once delivery, exactly-once tables.** Retries and reconnects can deliver an event
 twice. Silver de-duplicates within each micro-batch and MERGEs on `event_id`, so the history
