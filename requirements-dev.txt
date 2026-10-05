@@ -1,0 +1,5 @@
+-r producer/requirements.txt
+pyspark==3.5.*
+pandas
+pyarrow
+pytest

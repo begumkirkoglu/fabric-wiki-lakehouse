@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wikilake"
+version = "1.0.0"
+description = "Spark transformations for the Fabric real-time wiki lakehouse"
+requires-python = ">=3.10"
+# pyspark and delta are provided by the Fabric runtime; requests is preinstalled there too
+
+[tool.setuptools.packages.find]
+where = ["src"]

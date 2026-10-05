@@ -1,0 +1,38 @@
+// Real-time queries on the Eventhouse table `WikiEdits`
+// (second Eventstream destination: same events, queryable seconds after they happen).
+// Paste into a KQL Queryset or use as Real-Time Dashboard tiles.
+
+// 1. Edits per minute, last hour, per wiki
+WikiEdits
+| where todatetime(event_time) > ago(1h)
+| summarize edits = count() by wiki, bin(todatetime(event_time), 1m)
+| render timechart
+
+// 2. Who is editing right now: bot vs anonymous vs registered (last 15 min)
+WikiEdits
+| where todatetime(event_time) > ago(15m)
+| summarize edits = count() by wiki, user_type
+| extend share = round(100.0 * edits / toscalar(WikiEdits | where todatetime(event_time) > ago(15m) | count), 2)
+| order by edits desc
+
+// 3. Hot pages: most edited articles in the last 30 minutes
+WikiEdits
+| where todatetime(event_time) > ago(30m) and namespace == 0
+| summarize edits = count(), net_bytes = sum(byte_delta), last_edit = max(todatetime(event_time)) by wiki, page_title
+| top 20 by edits
+
+// 4. Edit-volume anomalies per wiki (spikes / drops), last 24 h at 5-minute resolution
+WikiEdits
+| extend ts = todatetime(event_time)
+| where ts > ago(24h)
+| make-series edits = count() default = 0 on ts from ago(24h) to now() step 5m by wiki
+| extend anomalies = series_decompose_anomalies(edits, 2.5)
+| mv-expand ts to typeof(datetime), edits to typeof(long), anomalies to typeof(int)
+| where anomalies != 0
+| project ts, wiki, edits, direction = iff(anomalies > 0, "spike", "drop")
+
+// 5. Pipeline health: end-to-end latency (event happened -> landed in Eventhouse)
+WikiEdits
+| where ingestion_time() > ago(1h)
+| extend latency_s = datetime_diff('second', ingestion_time(), todatetime(event_time))
+| summarize p50 = percentile(latency_s, 50), p95 = percentile(latency_s, 95), events = count()

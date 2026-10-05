@@ -1,0 +1,168 @@
+: ok
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":0}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://tr.wikipedia.org/wiki/Galata_Kulesi", "request_id": "req-0", "id": "00000000-0000-4000-8000-000000000000", "dt": "2026-10-05T12:00:00Z", "domain": "tr.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 0}, "id": 500000, "type": "categorize", "namespace": 0, "title": "Galata Kulesi", "comment": "", "timestamp": 1791200000, "user": "Cewbot", "bot": true, "minor": true, "server_name": "tr.wikipedia.org", "wiki": "trwiki"}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":1}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Istanbul", "request_id": "req-1", "id": "00000000-0000-4000-8000-000000000001", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 1}, "id": 500001, "type": "log", "namespace": 0, "title": "Istanbul", "comment": "copyedit", "timestamp": 1791200007, "user": "ExampleEditor", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki"}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":2}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Microsoft_Fabric", "request_id": "req-2", "id": "00000000-0000-4000-8000-000000000002", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 2}, "id": 500002, "type": "edit", "namespace": 0, "title": "Microsoft Fabric", "comment": "copyedit", "timestamp": 1791200014, "user": "ExampleEditor", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 4552, "new": 5108}, "revision": {"old": 1400, "new": 1401}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":3}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Istanbul", "request_id": "req-3", "id": "00000000-0000-4000-8000-000000000003", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 3}, "id": 500003, "type": "edit", "namespace": 0, "title": "Istanbul", "comment": "", "timestamp": 1791200021, "user": "WikiGnome42", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 4477, "new": 4298}, "revision": {"old": 1001, "new": 1002}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":4}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Microsoft_Fabric", "request_id": "req-4", "id": "00000000-0000-4000-8000-000000000004", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 4}, "id": 500004, "type": "edit", "namespace": 0, "title": "Microsoft Fabric", "comment": "copyedit", "timestamp": 1791200028, "user": "203.0.113.7", "bot": false, "minor": true, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 6166, "new": 5992}, "revision": {"old": 1401, "new": 1402}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":5}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Microsoft_Fabric", "request_id": "req-5", "id": "00000000-0000-4000-8000-000000000005", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 5}, "id": 500005, "type": "edit", "namespace": 0, "title": "Microsoft Fabric", "comment": "copyedit", "timestamp": 1791200035, "user": "ExampleEditor", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 8997, "new": 9149}, "revision": {"old": 1402, "new": 1403}, "patrolled": true}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":6}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Istanbul", "request_id": "req-6", "id": "00000000-0000-4000-8000-000000000006", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 6}, "id": 500006, "type": "edit", "namespace": 0, "title": "Istanbul", "comment": "", "timestamp": 1791200042, "user": "203.0.113.7", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 3372, "new": 3930}, "revision": {"old": 1002, "new": 1003}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":7}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Apache_Kafka", "request_id": "req-7", "id": "00000000-0000-4000-8000-000000000007", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 7}, "id": 500007, "type": "edit", "namespace": 0, "title": "Apache Kafka", "comment": "copyedit", "timestamp": 1791200049, "user": "WikiGnome42", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 3527, "new": 3597}, "revision": {"old": 1100, "new": 1101}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":8}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Istanbul", "request_id": "req-8", "id": "00000000-0000-4000-8000-000000000008", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 8}, "id": 500008, "type": "edit", "namespace": 0, "title": "Istanbul", "comment": "copyedit", "timestamp": 1791200056, "user": "203.0.113.7", "bot": false, "minor": true, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 4050, "new": 3949}, "revision": {"old": 1003, "new": 1004}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":9}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Microsoft_Fabric", "request_id": "req-9", "id": "00000000-0000-4000-8000-000000000009", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 9}, "id": 500009, "type": "new", "namespace": 0, "title": "Microsoft Fabric", "comment": "", "timestamp": 1791200063, "user": "WikiGnome42", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": null, "new": 1609}, "revision": {"old": null, "new": 1404}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":10}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-10", "id": "00000000-0000-4000-8000-000000000010", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 10}, "id": 500010, "type": "edit", "namespace": 0, "title": "Berlin", "comment": "copyedit", "timestamp": 1791200070, "user": "Cewbot", "bot": true, "minor": false, "server_name": "de.wikipedia.org", "wiki": "dewiki", "length": {"old": 7367, "new": 7710}, "revision": {"old": 1300, "new": 1301}, "patrolled": true}
+
+:keep-alive
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":11}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-11", "id": "00000000-0000-4000-8000-000000000011", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 11}, "id": 500011, "type": "edit", "namespace": 0, "title": "Berlin", "comment": "copyedit", "timestamp": 1791200077, "user": "Cewbot", "bot": true, "minor": false, "server_name": "de.wikipedia.org", "wiki": "dewiki", "length": {"old": 3962, "new": 4275}, "revision": {"old": 1301, "new": 1302}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":12}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Apache_Kafka", "request_id": "req-12", "id": "00000000-0000-4000-8000-000000000012", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 12}, "id": 500012, "type": "log", "namespace": 0, "title": "Apache Kafka", "comment": "", "timestamp": 1791200084, "user": "203.0.113.7", "bot": false, "minor": true, "server_name": "en.wikipedia.org", "wiki": "enwiki"}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":13}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Microsoft_Fabric", "request_id": "req-13", "id": "00000000-0000-4000-8000-000000000013", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 13}, "id": 500013, "type": "edit", "namespace": 0, "title": "Microsoft Fabric", "comment": "copyedit", "timestamp": 1791200091, "user": "2001:db8::42", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 6975, "new": 7594}, "revision": {"old": 1404, "new": 1405}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":14}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://tr.wikipedia.org/wiki/Galata_Kulesi", "request_id": "req-14", "id": "00000000-0000-4000-8000-000000000014", "dt": "2026-10-05T12:00:00Z", "domain": "tr.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 14}, "id": 500014, "type": "edit", "namespace": 0, "title": "Galata Kulesi", "comment": "copyedit", "timestamp": 1791200098, "user": "ExampleEditor", "bot": false, "minor": false, "server_name": "tr.wikipedia.org", "wiki": "trwiki", "length": {"old": 1967, "new": 2715}, "revision": {"old": 1201, "new": 1202}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":15}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-15", "id": "00000000-0000-4000-8000-000000000015", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 15}, "id": 500015, "type": "edit", "namespace": 0, "title": "Berlin", "comment": "", "timestamp": 1791200105, "user": "2001:db8::42", "bot": false, "minor": false, "server_name": "de.wikipedia.org", "wiki": "dewiki", "length": {"old": 2245, "new": 2946}, "revision": {"old": 1302, "new": 1303}, "patrolled": true}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":16}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-16", "id": "00000000-0000-4000-8000-000000000016", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 16}, "id": 500016, "type": "edit", "namespace": 0, "title": "Berlin", "comment": "copyedit", "timestamp": 1791200112, "user": "ExampleEditor", "bot": false, "minor": true, "server_name": "de.wikipedia.org", "wiki": "dewiki", "length": {"old": 7263, "new": 7605}, "revision": {"old": 1303, "new": 1304}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":17}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://tr.wikipedia.org/wiki/Galata_Kulesi", "request_id": "req-17", "id": "00000000-0000-4000-8000-000000000017", "dt": "2026-10-05T12:00:00Z", "domain": "tr.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 17}, "id": 500017, "type": "edit", "namespace": 0, "title": "Galata Kulesi", "comment": "copyedit", "timestamp": 1791200119, "user": "WikiGnome42", "bot": false, "minor": false, "server_name": "tr.wikipedia.org", "wiki": "trwiki", "length": {"old": 5068, "new": 5702}, "revision": {"old": 1202, "new": 1203}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":18}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Istanbul", "request_id": "req-18", "id": "00000000-0000-4000-8000-000000000018", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 18}, "id": 500018, "type": "log", "namespace": 0, "title": "Istanbul", "comment": "", "timestamp": 1791200126, "user": "2001:db8::42", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki"}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":19}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Istanbul", "request_id": "req-19", "id": "00000000-0000-4000-8000-000000000019", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 19}, "id": 500019, "type": "new", "namespace": 0, "title": "Istanbul", "comment": "copyedit", "timestamp": 1791200133, "user": "2001:db8::42", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": null, "new": 6913}, "revision": {"old": null, "new": 1006}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":20}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://tr.wikipedia.org/wiki/Galata_Kulesi", "request_id": "req-20", "id": "00000000-0000-4000-8000-000000000020", "dt": "2026-10-05T12:00:00Z", "domain": "tr.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 20}, "id": 500020, "type": "new", "namespace": 0, "title": "Galata Kulesi", "comment": "copyedit", "timestamp": 1791200140, "user": "2001:db8::42", "bot": false, "minor": true, "server_name": "tr.wikipedia.org", "wiki": "trwiki", "length": {"old": null, "new": 1829}, "revision": {"old": null, "new": 1204}, "patrolled": true}
+
+event: message
+id: bad
+data: {not valid json
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":21}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://tr.wikipedia.org/wiki/Galata_Kulesi", "request_id": "req-21", "id": "00000000-0000-4000-8000-000000000021", "dt": "2026-10-05T12:00:00Z", "domain": "tr.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 21}, "id": 500021, "type": "edit", "namespace": 0, "title": "Galata Kulesi", "comment": "", "timestamp": 1791200147, "user": "ExampleEditor", "bot": false, "minor": false, "server_name": "tr.wikipedia.org", "wiki": "trwiki", "length": {"old": 5044, "new": 4864}, "revision": {"old": 1204, "new": 1205}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":22}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Apache_Kafka", "request_id": "req-22", "id": "00000000-0000-4000-8000-000000000022", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 22}, "id": 500022, "type": "new", "namespace": 0, "title": "Apache Kafka", "comment": "copyedit", "timestamp": 1791200154, "user": "203.0.113.7", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": null, "new": 7255}, "revision": {"old": null, "new": 1103}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":23}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-23", "id": "00000000-0000-4000-8000-000000000023", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 23}, "id": 500023, "type": "edit", "namespace": 0, "title": "Berlin", "comment": "copyedit", "timestamp": 1791200161, "user": "Cewbot", "bot": true, "minor": false, "server_name": "de.wikipedia.org", "wiki": "dewiki", "length": {"old": 1660, "new": 1700}, "revision": {"old": 1304, "new": 1305}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":24}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-24", "id": "00000000-0000-4000-8000-000000000024", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 24}, "id": 500024, "type": "edit", "namespace": 0, "title": "Berlin", "comment": "", "timestamp": 1791200168, "user": "2001:db8::42", "bot": false, "minor": true, "server_name": "de.wikipedia.org", "wiki": "dewiki", "length": {"old": 8236, "new": 8216}, "revision": {"old": 1305, "new": 1306}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":25}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-25", "id": "00000000-0000-4000-8000-000000000025", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 25}, "id": 500025, "type": "log", "namespace": 0, "title": "Berlin", "comment": "copyedit", "timestamp": 1791200175, "user": "2001:db8::42", "bot": false, "minor": false, "server_name": "de.wikipedia.org", "wiki": "dewiki"}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":26}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://tr.wikipedia.org/wiki/Galata_Kulesi", "request_id": "req-26", "id": "00000000-0000-4000-8000-000000000026", "dt": "2026-10-05T12:00:00Z", "domain": "tr.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 26}, "id": 500026, "type": "edit", "namespace": 0, "title": "Galata Kulesi", "comment": "copyedit", "timestamp": 1791200182, "user": "Cewbot", "bot": true, "minor": false, "server_name": "tr.wikipedia.org", "wiki": "trwiki", "length": {"old": 8845, "new": 9017}, "revision": {"old": 1205, "new": 1206}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":27}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Apache_Kafka", "request_id": "req-27", "id": "00000000-0000-4000-8000-000000000027", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 27}, "id": 500027, "type": "edit", "namespace": 0, "title": "Apache Kafka", "comment": "", "timestamp": 1791200189, "user": "203.0.113.7", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 2900, "new": 3077}, "revision": {"old": 1103, "new": 1104}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":28}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Istanbul", "request_id": "req-28", "id": "00000000-0000-4000-8000-000000000028", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 28}, "id": 500028, "type": "edit", "namespace": 0, "title": "Istanbul", "comment": "copyedit", "timestamp": 1791200196, "user": "WikiGnome42", "bot": false, "minor": true, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 2493, "new": 2731}, "revision": {"old": 1006, "new": 1007}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":29}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://tr.wikipedia.org/wiki/Galata_Kulesi", "request_id": "req-29", "id": "00000000-0000-4000-8000-000000000029", "dt": "2026-10-05T12:00:00Z", "domain": "tr.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 29}, "id": 500029, "type": "edit", "namespace": 0, "title": "Galata Kulesi", "comment": "copyedit", "timestamp": 1791200203, "user": "Cewbot", "bot": true, "minor": false, "server_name": "tr.wikipedia.org", "wiki": "trwiki", "length": {"old": 5379, "new": 5835}, "revision": {"old": 1206, "new": 1207}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":30}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Microsoft_Fabric", "request_id": "req-30", "id": "00000000-0000-4000-8000-000000000030", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 30}, "id": 500030, "type": "edit", "namespace": 0, "title": "Microsoft Fabric", "comment": "", "timestamp": 1791200210, "user": "203.0.113.7", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 6656, "new": 7411}, "revision": {"old": 1405, "new": 1406}, "patrolled": true}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":31}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Microsoft_Fabric", "request_id": "req-31", "id": "00000000-0000-4000-8000-000000000031", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 31}, "id": 500031, "type": "edit", "namespace": 0, "title": "Microsoft Fabric", "comment": "copyedit", "timestamp": 1791200217, "user": "ExampleEditor", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 4740, "new": 5243}, "revision": {"old": 1406, "new": 1407}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":32}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-32", "id": "00000000-0000-4000-8000-000000000032", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 32}, "id": 500032, "type": "edit", "namespace": 0, "title": "Berlin", "comment": "copyedit", "timestamp": 1791200224, "user": "ExampleEditor", "bot": false, "minor": true, "server_name": "de.wikipedia.org", "wiki": "dewiki", "length": {"old": 4944, "new": 5464}, "revision": {"old": 1307, "new": 1308}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":33}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Istanbul", "request_id": "req-33", "id": "00000000-0000-4000-8000-000000000033", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 33}, "id": 500033, "type": "edit", "namespace": 0, "title": "Istanbul", "comment": "", "timestamp": 1791200231, "user": "203.0.113.7", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 4609, "new": 4641}, "revision": {"old": 1007, "new": 1008}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":34}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Istanbul", "request_id": "req-34", "id": "00000000-0000-4000-8000-000000000034", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 34}, "id": 500034, "type": "edit", "namespace": 0, "title": "Istanbul", "comment": "copyedit", "timestamp": 1791200238, "user": "ExampleEditor", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 1838, "new": 1538}, "revision": {"old": 1008, "new": 1009}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":35}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Microsoft_Fabric", "request_id": "req-35", "id": "00000000-0000-4000-8000-000000000035", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 35}, "id": 500035, "type": "edit", "namespace": 0, "title": "Microsoft Fabric", "comment": "copyedit", "timestamp": 1791200245, "user": "ExampleEditor", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 8773, "new": 9217}, "revision": {"old": 1407, "new": 1408}, "patrolled": true}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":36}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Microsoft_Fabric", "request_id": "req-36", "id": "00000000-0000-4000-8000-000000000036", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 36}, "id": 500036, "type": "edit", "namespace": 0, "title": "Microsoft Fabric", "comment": "", "timestamp": 1791200252, "user": "203.0.113.7", "bot": false, "minor": true, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 6030, "new": 6500}, "revision": {"old": 1408, "new": 1409}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":37}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://en.wikipedia.org/wiki/Apache_Kafka", "request_id": "req-37", "id": "00000000-0000-4000-8000-000000000037", "dt": "2026-10-05T12:00:00Z", "domain": "en.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 37}, "id": 500037, "type": "edit", "namespace": 0, "title": "Apache Kafka", "comment": "copyedit", "timestamp": 1791200259, "user": "2001:db8::42", "bot": false, "minor": false, "server_name": "en.wikipedia.org", "wiki": "enwiki", "length": {"old": 5933, "new": 6378}, "revision": {"old": 1104, "new": 1105}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":38}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-38", "id": "00000000-0000-4000-8000-000000000038", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 38}, "id": 500038, "type": "edit", "namespace": 0, "title": "Berlin", "comment": "copyedit", "timestamp": 1791200266, "user": "Cewbot", "bot": true, "minor": false, "server_name": "de.wikipedia.org", "wiki": "dewiki", "length": {"old": 4817, "new": 5500}, "revision": {"old": 1308, "new": 1309}}
+
+event: message
+id: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":39}]
+data: {"$schema": "/mediawiki/recentchange/1.0.0", "meta": {"uri": "https://de.wikipedia.org/wiki/Berlin", "request_id": "req-39", "id": "00000000-0000-4000-8000-000000000039", "dt": "2026-10-05T12:00:00Z", "domain": "de.wikipedia.org", "stream": "mediawiki.recentchange", "topic": "eqiad.mediawiki.recentchange", "partition": 0, "offset": 39}, "id": 500039, "type": "edit", "namespace": 0, "title": "Berlin", "comment": "", "timestamp": 1791200273, "user": "203.0.113.7", "bot": false, "minor": false, "server_name": "de.wikipedia.org", "wiki": "dewiki", "length": {"old": 1837, "new": 2238}, "revision": {"old": 1309, "new": 1310}}
+
