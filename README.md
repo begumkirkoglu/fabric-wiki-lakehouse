@@ -8,6 +8,8 @@ A streaming + batch data platform on **Microsoft Fabric**, built only on open da
 * **Orchestration:** Data Pipelines with schedule, retries and quality gates
 * **AI:** a **Fabric Data Agent** that answers natural-language questions from the gold tables
 
+![Architecture](docs/architecture.png)
+
 ```
  Wikimedia EventStreams (SSE)                                                         ┌─► Eventhouse  WikiEdits ──► KQL / Real-Time Dashboard
           │                                                                           │
@@ -139,6 +141,19 @@ The tests run the producer against a recorded SSE stream (including a dropped co
 resume, a malformed event, and the privacy rules), then feed its output through the silver,
 gold and quality logic on local PySpark, and check the taxi schema normalization across
 format eras. Delta-specific statements (MERGE, `replaceWhere`) run on the Fabric runtime.
+
+## Lessons from running it
+
+Things that only showed up on a real workspace with live data:
+
+* **Wire the Eventstream destinations.** Adding a destination does not connect it. Drag a connection from the stream node to each destination, then **Publish**.
+* **Check the canvas after a break.** After two idle weeks both destinations were *Inactive* while the source was still *Active*, so events were accepted and went nowhere. When you reactivate, start from a custom time before your producer started, not *Now*, or the buffered events are skipped.
+* **Quote values in `.env`.** The user agent contains parentheses and the connection string contains semicolons; zsh needs double quotes around both.
+* **Run the producer before the first notebook.** `bronze_wiki_edits` only exists after the Lakehouse destination receives its first events.
+* **Expect slow Spark session starts with a custom library.** With the `wikilake` wheel in the Environment, a session took several minutes to start, once per notebook activity. Enable *Workspace settings → Data Engineering/Science → Spark settings → High concurrency → For pipeline running multiple notebooks* so the three notebooks in `pl_wiki_lakehouse` share one session.
+* **Refresh the Data Agent after recreating tables.** Dropped and recreated tables are new objects; refresh the agent's data source and re-check the table selections.
+* **Read latency over a steady window.** During a catch-up after reactivation, p95 latency looks terrible because it measures backlog. In steady streaming the measured p50 was 4 s and p95 11 s.
+* **Logged-out editors are temporary accounts.** Wikipedia now shows logged-out edits as `~2025-…` names instead of IP addresses; the producer counts both as `anonymous`.
 
 ## Known limitations / next steps
 * The silver MERGE and gold windows are tested for logic locally; an integration test on a
